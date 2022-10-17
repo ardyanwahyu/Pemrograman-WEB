@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Pemalang info-About me</title>
+ <link rel="stylesheet" href="aboutme.css">
+ <link rel="icon" href="favicon-32x32.png">
+</head>
+<body>
+    <header> 
+		<h1>PEMALANG INFO</h1>
+	</header>
+	<section>
+			<nav>
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="cv.html">DOWNLOAD CV</a></li>
+					<li><a href="aboutme.html">ABOUT ME</a></li>
+					<li><a href="kontak.html">KONTAK</a></li>	
+					<li><a href="artikel.html">ARTIKEL</a></li>		
+				</ul>	
+			</nav>	
+		</section>
+ <hr />
+
+ <article>
+ <h1>Tentang Saya </h1>
+ <p>
+ Hi, saya adalah mahasiswa udinus.
+ Saat ini sedang belajar HTML.
+ </p>
+ <p>
+ Saya masih baru dalam hal ini, karena itu
+ saya tidak akan pernah berhenti belajar.
+ </p>
+ <p>
+ Saya ingin menguasai bahasa HTML, CSS, dan Javascript.
+ Simak video lengkap tentang saya.
+ </p>
+ <p>
+ <img src="pmlang.jpg" alt="" style="width: 215px; height: 287px;">\
+ </p>
+ <p>
+	<button onclick="durationVid()" type="button">Duration</button>
+	<button onclick="playVid()" type="button">Play Video</button>
+	<button onclick="pauseVid()" type="button">Pause Video</button> 
+</p>
+<p>
+	<video id="myVideo" width="320" height="240" controls>
+	<source src="vidku.mp4"
+	type="video/webm"/>
+	</video>
+</p>
+<script>
+	var vid= document.getElementById("myVideo")
+	function durationVid(){
+		vid.duration();
+	}
+	function playVid(){
+		vid.play();
+	}
+	function pauseVid(){
+		vid.pause();
+	}
+</script>
+ </article>
+ <hr>
+ 
+ <footer style="text-align: center;">
+    <p>Copyright &copy; 2022 Ardyan Wahyu Anggoro</p>
+    <p>Ulujami,Pemalang</p>
+ </footer>
+ 
+</body>
+</html>

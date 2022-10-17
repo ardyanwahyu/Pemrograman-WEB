@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Video Subtittle - HTML5</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" href="subtittle.css">
+  <style>
+    body
+    {
+
+        border: 1 px solid black;
+        background-color: #d9ac8b;
+    }
+    header
+    {
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700px;
+    }
+    button
+    {
+        border-radius: 20px;
+        padding: 10px;
+        width: 100px;
+        box-shadow: 2px 2px 4px #461b28,
+        -2px -2px -4px #2f121a;
+    }
+    button:hover
+    {
+        color: #461b28;
+    }
+    p
+    {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        align: center;
+    }
+    
+  </style>
+</head> 
+<body> 
+  <header align="center">VIDEO SUBTITTLE</header> 
+  <p>Judul Lagu: Sakura </p>
+  <p>Penyanyi  : Fariz RM</p>
+  <p>Source video   : <a href="https://youtu.be/8xmVYwPeYoo"></a>https://youtu.be/8xmVYwPeYoo</p>
+
+  <center>
+  <button onclick="playVid()" type="button">Play</button>
+  <button onclick="pauseVid()" type="button">Pause</button>
+  <br><br>
+  </center>
+
+<center>
+    <video width="1000px"  id="myVideo" controls> 
+    <source src="ckckck.mp4" type="video/mp4"/> 
+    <track src="sakura.vtt" kind="subtitles" srclang="id" label="Indonesia"/> 
+    </video>
+</center>
+<br><br><br>
+
+    <h2 align="center">LIRIK -SAKURA-</h2>
+    <p align="center">Senada cinta bersemi di antara kita <br>
+        Menyandang anggunnya peranan jiwa asmara <br>
+        Terlanjur untuk terhenti <br>
+        Di jalan yang telah tertempuh <br> 
+        Semenjak dini, sehidup semati <br>
+        
+        Kian lama kian pasrah ku rasakan jua <br> 
+        Janji yang terucap tak mungkin terhapus saja <br>
+        Walau rintangan berjuta walau cobaan memaksa <br>
+        Diriku terjerat, dipeluk asmara <br>
+        
+        Bersama dirimu terbebas dari nestapa <br> 
+        Dalam wangi bunga cita, cinta dan bahagia <br> 
+        Walau rintangan berjuta, walau cobaan memaksa <br>
+        Diriku terbuai, di batas asmara <br>
+        
+        Kian lama kian pasrah kurasakan jua <br>
+        Janji yang terucap tak mungkin terhapus saja <br>
+        Walau rintangan berjuta, walau cobaan memaksa <br>
+        Diriku terjerat, di peluk asmara <br>
+        
+        Terlambat untuk berdusta, terlambatlah sudah <br> 
+        Menyentuh sanubari tak semudah kusangka <br>
+        Yakin akan cintamu yakinkan segalanya <br>
+        Perlahan dan pasti daku kan melangkah <br>
+        Menuju damai jiwa <br>
+    </p>
+        
+   
+
+  <script> 
+    var vid = document.getElementById("myVideo"); 
+    
+    function playVid() { 
+      vid.play(); 
+    } 
+    
+    function pauseVid() { 
+      vid.pause(); 
+    } 
+    </script> 
+</body> 
+</html>
